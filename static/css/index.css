@@ -1,0 +1,268 @@
+	@charset "utf-8";
+	body {
+		font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+		color: #666;
+	}
+	
+	#myCarousel {
+		margin: 50px 0 0 0;
+	}
+	
+	.carousel-inner img {
+		margin: 0 auto;
+	}
+	
+	.row {
+		height: 45px;
+	}
+	/*自定义css样式*/
+	
+	.dropdown-menu {
+		background-color: rgb(34, 34, 34);
+	}
+	
+	.dropdown-menu> li> a {
+		color: white;
+	}
+	
+	.img_box {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		transition: all 1s;
+	}
+	
+	.img_box a {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		/*清除浮动溢出*/
+	}
+	
+	.img_box img {
+		transition: 1.5s;
+		/*缩放时间1.5s*/
+	}
+	
+	.img_box img:hover {
+		-webkit-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5);
+		/*自动放大到原来的1.5倍*/
+	}
+	
+	#timg {
+		width: 100%;
+		padding: 10px;
+		background-color: black;
+	}
+	
+	#timg2 {
+		width: 100%;
+		background-color: black;
+	}
+	
+	pre {
+		white-space: pre-wrap;
+		/* css-3 */
+		white-space: -moz-pre-wrap;
+		/* Mozilla, since 1999 */
+		white-space: -pre-wrap;
+		/* Opera 4-6 */
+		white-space: -o-pre-wrap;
+		/* Opera 7 */
+		word-wrap: break-word;
+		/* Internet Explorer 5.5+ */
+	}
+	
+	#footer {
+		background-color: grey;
+		margin-top: 5px;
+		padding-top: 2px;
+		text-align: center;
+		color: #eee;
+	}
+	
+	@media only screen and (min-width:1366px) {
+		.table thead {
+			text-align: center;
+			font-size: 17.5px;
+		}
+		.table tbody {
+			text-align: center;
+			font-size: 15.5px;
+		}
+		/*echart页面布局css样式*/
+		.map {
+			margin-bottom: 30px;
+		}
+		#pie {
+			width: 364px;
+			position: relative;
+		}
+		#line_bar {
+			width: 850px;
+			float: left;
+			position: relative;
+		}
+		#pie>div {
+			width: 364px;
+			position: absolute;
+			left: 0;
+			margin-top: 20px;
+			z-index: 1;
+		}
+		#line_bar>div {
+			width: 850px;
+			position: absolute;
+			left: 75px;
+			margin-top: 20px;
+			z-index: 1;
+		}
+		.second_li ul {
+			height: 10px;
+		}
+		.second_li li {
+			font-family: "微软雅黑";
+			font-weight: bold;
+			color: #666;
+			float: left;
+			margin: 0px 10px 0 18px;
+			font-size: 15px;
+			display: block;
+			cursor: pointer;
+			/*光标为一只手*/
+		}
+	    .active_li {
+			border-bottom: 2px solid #0fa1f4;
+		}
+		#pie .active_div {
+			width: 364px;
+			z-index: 99;
+			position: absolute;
+		}
+		#line_bar .active_div {
+			width: 850px;
+			z-index: 99;
+			position: absolute;
+		}
+	}
+	
+	@media only screen and (min-width:1440px) {
+		.table thead {
+			text-align: center;
+			font-size: 17.5px;
+		}
+		.table tbody {
+			text-align: center;
+			font-size: 15.5px;
+		}
+		/*echart页面布局css样式*/
+		#pie {
+			width: 400px;
+			position: relative;
+		}
+		#line_bar {
+			width: 880px;
+			float: left;
+			position: relative;
+		}
+		#pie>div {
+			width: 400px;
+			position: absolute;
+			left: 0;
+			margin-top: 20px;
+			z-index: 1;
+		}
+		#line_bar>div {
+			width: 880px;
+			position: absolute;
+			left: 75px;
+			margin-top: 20px;
+			z-index: 1;
+		}
+		.second_li ul {
+			height: 10px;
+		}
+		.second_li li {
+			float: left;
+			margin: 0px 10px 0 18px;
+			font-size: 15px;
+			display: block;
+			cursor: pointer;
+			/*光标为一只手*/
+		}
+		.active_li {
+			border-bottom: 2px solid #0fa1f4;
+		}
+		#pie .active_div {
+			width: 400px;
+			z-index: 99;
+			position: absolute;
+		}
+		#line_bar .active_div {
+			width: 880px;
+			z-index: 99;
+			position: absolute;
+		}
+	}
+	
+	@media only screen and (min-width:1600px) {
+		.table thead {
+			text-align: center;
+			font-size: 20px;
+		}
+		.table tbody {
+			text-align: center;
+			font-size: 15px;
+		}
+		/*echart页面布局css样式*/
+		#pie {
+			width: 450px;
+			position: relative;
+		}
+		#line_bar {
+			width: 975px;
+			float: left;
+			position: relative;
+		}
+		#pie>div {
+			width: 475px;
+			position: absolute;
+			left: 0;
+			margin-top: 20px;
+			z-index: 1;
+		}
+		#line_bar>div {
+			width: 975px;
+			position: absolute;
+			left: 75px;
+			margin-top: 20px;
+			z-index: 1;
+		}
+		.second_li ul {
+			height: 10px;
+		}
+		.second_li li {
+			float: left;
+			margin: 0px 10px 0 18px;
+			font-size: 16px;
+			display: block;
+			cursor: pointer;
+			/*光标为一只手*/
+		}
+		.active_li {
+			border-bottom: 2px solid #0fa1f4;
+		}
+		#pie .active_div {
+			width: 450px;
+			z-index: 99;
+			position: absolute;
+		}
+		#line_bar .active_div {
+			width: 975px;
+			z-index: 99;
+			position: absolute;
+		}
+	}

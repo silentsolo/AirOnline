@@ -1,0 +1,79 @@
+@charset "utf-8";
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+pre {
+	white-space: pre-wrap;
+	/* css-3 */
+	white-space: -moz-pre-wrap;
+	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;
+	/* Opera 4-6 */
+	white-space: -o-pre-wrap;
+	/* Opera 7 */
+	word-wrap: break-word;
+	/* Internet Explorer 5.5+ */
+}
+
+.logo {
+	padding:0;
+}
+
+#myCarousel {
+	margin: 50px 0 0 0;
+}
+#navbar-collapse ul {
+	margin-top:0;
+}
+.carousel-inner img {
+	margin: 0 auto;
+}
+a:focus {
+				outline: none;
+			}
+.nav-pills {
+				width: 150px;
+			}
+.nav-pills.affix {
+				bottom: 300px;}
+.jumbotron {
+	height: 150px;
+	background-image: url(images/bg.jpg);
+	margin: 0;
+	height: 200px;
+	color: #ccc;
+}
+.jumbotron h1 {
+	font-size: 60px;
+	padding: 0 0 0 20px;
+}
+.jumbotron h2 {
+	font-size: 60px;
+	
+}
+.jumbotron h3 {
+	font-size: 15px;
+	padding: 0 0 0 20px;
+	text-align: center;
+
+}
+.jumbotron h4 {
+	font-size: 15px;
+	padding: 0 0 0 20px;
+}
+@media only screen and (min-width: 10px) and (max-width: 640px) {
+	.jumbotron h2 {
+	font-size: 40px;
+	
+}
+.jumbotron h3 {
+	font-size: 15px;
+	padding: 0 0 0 20px;
+	text-align: center;
+}
+#neirong{
+	width: 100%;
+}
+	
+

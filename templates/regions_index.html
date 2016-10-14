@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>省级检索</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='study.css') }}">
+	  <link rel="stylesheet" href="static/css/style_common.css">
+	  <link rel="stylesheet" href="static/css/style6.css">
+	  <link rel="stylesheet" href="static/css/demo.css">
+	  <link rel="stylesheet" href="static/css/imgshow.css">
+	  <link rel="stylesheet" href="static/css/roll.css">
+	  <link rel="shortcut icon" type="image/x-icon" href="static/images/cugbIcon.ico" />
+    <link rel="stylesheet" href="static/css/map.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!--
+                    	作者：1330465864@qq.com
+                    	时间：2016-04-09
+                    	描述：按钮绑定导航栏要显示的东西，屏幕缩小时
+                    -->
+				<!--导航栏与隐藏按钮绑定，屏幕缩小时导航栏隐藏-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-info">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+				<div>
+					<a href="#" class="navbar-brand " style="font-size: 22px;">全国空气质量展示与分析平台&nbsp;</a>
+				</div>
+			</div>
+			<!--导航栏设置显示-->
+			<div class="collapse navbar-collapse  navbar-responsive-collapse" id="navbar-info">
+				<div>
+					<ul class="nav navbar-nav navbar-left">
+						<li class="active">
+							<a href="/"><span class="glyphicon glyphicon-home"></span> 首页</a>
+						</li>
+						<li>
+							<a href="/regions"><span class="glyphicon glyphicon-home"></span> 区域概览</a>
+						</li>
+						<li>
+							<a href="/evregion"><span class="glyphicon glyphicon-film"></span> 省级检索</a>
+						</li>
+						<li>
+							<a href="/about"><span class="glyphicon glyphicon-question-sign"></span><b> 关于</b></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container " id="map">
+			<div id="row" style="padding:10px 0 0 0;">
+				<pre align="center" style="font-size: 25px;"><b>按照全国大多数省级行政单位<font style="color: red;">首字母</font>排序的各省,直辖市,自治区空气质量及天气状况的历史数据</b></pre>
+			</div>
+			<div class="row ">
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/anhui.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>安徽</b></pre>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href="/region/beijing" class="thumbnail">
+						<img src="static/images/beijng.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>北京</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/chongqing.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>重庆</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/fujian.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>福建</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/gansu.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>甘肃</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/guangdong.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>广东</b></pre>
+					</div>
+				</div>
+			</div>
+
+			<!--
+                	作者：1330465864@qq.com
+                	时间：2016-04-11
+                	描述：第二行的四个元素
+                -->
+			<div class="row ">
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/guangxi.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>广西</b></pre>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/guizhou.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>贵州</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/hainan.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>海南</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/hebei.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>河北</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/henan.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>河南</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/heilongjiang.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>黑龙江</b></pre>
+					</div>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/hubei.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>湖北</b></pre>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/hunan.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>湖南</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/jiling.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>吉林</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/jiangsu.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>江苏</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/jiangxi.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>江西</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/liaoning.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>辽宁</b></pre>
+					</div>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/neimenggu.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>内蒙古</b></pre>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/ninxia.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>宁夏</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/qinghai.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>青海</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/shandong.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>山东</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/shanxi.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>山西</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/shananxi.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>陕西</b></pre>
+					</div>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/sichuan.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>四川</b></pre>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/tianjing.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>天津</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/xizang.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>西藏</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href="/region/xinjiang" class="thumbnail">
+						<img src="static/images/xinjiang.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>新疆</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/yunnan.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>云南</b></pre>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-12  img_box" style="margin-top: 15px ; ">
+					<a href=" " class="thumbnail">
+						<img src="static/images/zhejiang.jpg" />
+					</a>
+					<div>
+						<pre align="center"><b>浙江</b></pre>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--
+	作者：1330465864@qq.com
+	时间：2016-04-09
+	描述：底部，需要填写一些联系信息，友情链接
+-->
+
+		<footer id="footer">
+			<div class="container">
+				<p>
+							<a href="http://www.cugb.edu.cn/index.action " style="color:lightblue; ">中国地质大学(北京)&nbsp;&nbsp;&nbsp;</a>|
+							<a href="http://www.air-level.com/ " style="color: lightblue; ">&nbsp;&nbsp;&nbsp;空气知音&nbsp;&nbsp;&nbsp; </a> |
+							<a href="http://zx.bjmemc.com.cn/web/index.aspx " style="color:lightblue; ">北京市空气质量</a>
+						</p>
+						<p>&copy;中国地质大学（北京）2013-2016</p>
+			</div>
+		</footer>
+
+		<!--
+	作者：1330465864@qq.com
+	时间：2016-04-09
+	描述：需要引入的js文件：jquery，bootstrap，自定义js文件（轮播图控制，垂直居中控制）
+-->
+		<script src="static/js/jquery.min.js "></script>
+		<script src="static/js/bootstrap.min.js "></script>
+		<script src="static/js/index.js "></script>
+</body>
+</html>

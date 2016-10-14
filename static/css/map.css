@@ -1,0 +1,100 @@
+	@charset "utf-8";
+	body {
+		font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+		color: #666;
+	}
+	
+	#myCarousel {
+		margin: 50px 0 0 0;
+	}
+	
+	.carousel-inner img {
+		margin: 0 auto;
+	}
+	
+	.row {
+		height: 45px;
+	}
+	/*自定义css样式*/
+	
+	.dropdown-menu {
+		background-color: rgb(34, 34, 34);
+	}
+	
+	.dropdown-menu> li> a {
+		color: white;
+	}
+	
+	.img_box {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		transition: all 1s;
+	}
+	
+	.img_box a {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		/*清除浮动溢出*/
+	}
+	
+	.img_box img {
+		transition: 1.5s;
+		/*缩放时间1.5s*/
+	}
+	
+	.img_box img:hover {
+		-webkit-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5);
+		/*自动放大到原来的1.5倍*/
+	}
+	
+	#timg {
+		width: 100%;
+		padding: 10px;
+		background-color: black;
+	}
+	
+	#timg2 {
+		width: 100%;
+		background-color: black;
+	}
+	
+	pre {
+		white-space: pre-wrap;
+		/* css-3 */
+		white-space: -moz-pre-wrap;
+		/* Mozilla, since 1999 */
+		white-space: -pre-wrap;
+		/* Opera 4-6 */
+		white-space: -o-pre-wrap;
+		/* Opera 7 */
+		word-wrap: break-word;
+		/* Internet Explorer 5.5+ */
+	}
+	
+	#footer {
+		background-color: grey;
+		margin-top: 5px;
+		padding-top: 2px;
+		text-align: center;
+		color: #eee;
+	}
+	
+	#map {
+		width: 100%;
+		padding: 10px;
+		background-color: black;
+		margin-top: 50px;
+	}
+	
+	#map p {
+		font-size: 40px;
+	}
+	
+	#top {
+		background-color: black;
+	}
